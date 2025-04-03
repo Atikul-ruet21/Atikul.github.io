@@ -1,0 +1,232 @@
+/* main.css */
+/* BASE: Reset + Fundamental styles */
+:root {
+  --primary: #87ceeb; /* Sky Blue */
+  --secondary: #1a1a1a;
+  --accent: #ff6b6b;
+  --text-light: #2d3436;
+  --text-dark: #fdfdfd;
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Critical CSS - Above the fold content */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  background-color: var(--bg-light);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+[data-theme="dark"] {
+  color: var(--text-dark);
+  background-color: var(--bg-dark);
+  --primary: var(--secondary);
+}
+
+/* LAYOUT: Grid system + structural */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* MODULES: Reusable components */
+/* Navigation with subtle animation */
+.main-nav {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  background: rgba(var(--bg-light), 0.97);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  animation: slideDown 0.6s forwards 0.3s;
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+  .main-nav {
+    background: var(--bg-light);
+  }
+}
+
+@keyframes slideDown {
+  to {
+    top: 0;
+  }
+}
+
+/* Card component with BEM */
+.card {
+  background: var(--bg-light);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform var(--transition);
+}
+
+.card--featured {
+  position: relative;
+  overflow: visible;
+}
+
+.card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 2rem;
+}
+
+/* THEME: Dark mode specifics */
+[data-theme="dark"] .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* UTILITIES: Single-purpose classes */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hover-scale {
+  transition: transform var(--transition);
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* ANIMATIONS: Performance-focused */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* RESPONSIVE: Mobile-first approach */
+@media (min-width: 768px) {
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-nav {
+    padding: 2rem 0;
+  }
+}
+
+/* Print styles */
+@media print {
+  .main-nav {
+    display: none;
+  }
+}
+
+/*! main.css | 8.4KB gzipped */
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif, "Times New Roman", Times, serif;
+  box-sizing: content-box;
+}
+
+body {
+}
+:root {
+  --primary: #87ceeb;
+  --secondary: #1a1a1a;
+  --text-light: #2d3436;
+  --text-dark: #fdfdfd;
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Components */
+.card {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Theme */
+[data-theme="dark"] {
+  color: var(--text-dark);
+  background-color: var(--bg-dark);
+}
+
+[data-theme="dark"] .card {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

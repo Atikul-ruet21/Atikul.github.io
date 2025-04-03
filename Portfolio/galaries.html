@@ -1,0 +1,168 @@
+<!-- galleries.html -->
+<section class="galleries">
+  <style>
+    /* Galleries Page Specific Styles */
+    .galleries {
+      padding: 40px 20px;
+      background: #f9f9f9;
+    }
+    .galleries .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .galleries h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--color-primary);
+    }
+    .galleries p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    /* Gallery Tabs */
+    .gallery-tabs {
+      margin-bottom: 20px;
+    }
+    .gallery-tabs button {
+      background: var(--color-primary);
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .gallery-tabs button:hover,
+    .gallery-tabs button.active {
+      background: #0056b3;
+    }
+    /* Gallery Content Grid */
+    .gallery-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .gallery-grid {
+      display: none;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery-grid.active {
+      display: flex;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+    }
+    .gallery-caption h3 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .gallery-caption p {
+      font-size: 0.9rem;
+      margin: 5px 0 0;
+    }
+  </style>
+
+  <div class="container">
+    <h1>Galleries</h1>
+    <p>
+      Explore my curated collections of inspirational Islamic books and
+      captivating photography.
+    </p>
+
+    <!-- Gallery Navigation Tabs -->
+    <div class="gallery-tabs">
+      <button class="gallery-tab active" data-target="books-gallery">
+        Books
+      </button>
+      <button class="gallery-tab" data-target="photos-gallery">Photos</button>
+    </div>
+
+    <!-- Gallery Content -->
+    <div class="gallery-content">
+      <!-- Books Gallery -->
+      <div id="books-gallery" class="gallery-grid active">
+        <div class="gallery-item">
+          <img src="islamic_book1.jpg" alt="Islamic Book 1" />
+          <div class="gallery-caption">
+            <h3>Islamic Wisdom</h3>
+            <p>A collection of inspiring Islamic literature.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="productive_book1.jpg" alt="Productive Book 1" />
+          <div class="gallery-caption">
+            <h3>Path to Productivity</h3>
+            <p>Empowering books for personal growth.</p>
+          </div>
+        </div>
+        <!-- Add additional book items as needed -->
+      </div>
+
+      <!-- Photos Gallery -->
+      <div id="photos-gallery" class="gallery-grid">
+        <div class="gallery-item">
+          <img src="photo1.jpg" alt="Inspiring Photo 1" />
+          <div class="gallery-caption">
+            <h3>Moment of Reflection</h3>
+            <p>A serene view capturing the essence of calm.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="photo2.jpg" alt="Inspiring Photo 2" />
+          <div class="gallery-caption">
+            <h3>Vibrant Life</h3>
+            <p>Colors of life captured through my lens.</p>
+          </div>
+        </div>
+        <!-- Add additional photo items as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal JavaScript for Tab Switching -->
+  <script>
+    // Toggle gallery tabs: When a tab is clicked, switch the active gallery grid
+    document.querySelectorAll(".gallery-tab").forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        // Remove active class from all tabs and gallery grids
+        document
+          .querySelectorAll(".gallery-tab")
+          .forEach((t) => t.classList.remove("active"));
+        document
+          .querySelectorAll(".gallery-grid")
+          .forEach((g) => g.classList.remove("active"));
+        // Activate the clicked tab and corresponding gallery grid
+        this.classList.add("active");
+        var target = this.getAttribute("data-target");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+  </script>
+</section>

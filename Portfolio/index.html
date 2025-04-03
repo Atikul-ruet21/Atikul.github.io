@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Atikul's portfolio showcasing web development projects and skills."
+    />
+    <meta
+      name="keywords"
+      content="portfolio,website, web development, projects, skills, John Doe"
+    />
+    <meta name="author" content="Atikul Islam " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional portfolio showcasing web development projects and skills"
+    />
+    <title>Atikul| Dev</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <title>Atikul's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="eet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- In HTML head -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="eet"
+    />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Navigation Bar -->
+        <div class="container">
+          <nav>
+            <img src="image/logo.png" alt="logo Picture" />
+            <img
+              src="image/pasport.jpg"
+              style="height: 150px"
+              alt="profile Picture"
+            />
+  
+            <ul>
+              <li><a href="home.html" data-page="home.html">Home</a></li>
+              <li><a href="about.html" data-page="about.html">About</a></li>
+              <li><a href="projects.html" data-page="projects.html">Projects</a></li>
+             
+              <li><a href="education.html" data-page="education.html">Education</a></li>
+
+              <li>
+                <a href="extra.html" data-page="extra.html">Extracurricular</a>
+              </li>
+              <li><a href="experience.html" data-page="experience.html">Experience</a></li>
+            </ul>
+          </nav>
+          <div class="about-section">
+              <div class="container">
+                  <div class="about-row">
+                     
+                      <div class="about-content">
+                          <Span class="greeting">Hey there!&nbsp &nbsp&nbsp&nbsp&nbsp I'm</Span>
+                          <h1  class="name" style="color:rgb(28, 32, 161)">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspATIKUL</h1>
+                          
+                          <div class="passion-statement">
+                              <div class="passion-item">
+                                  <i class="fas fa-brain"></i>
+                                  <span>Passionate about AI & Machine Learning</span>
+                              </div>
+                              <div class="passion-item">
+                                  <i class="fas fa-code"></i>
+                                  <span>Learning Front-End Web Development</span>
+                              </div>
+                          </div>
+          
+                          <div class="education-info">
+                              <p class="current-status" style="color:rgb(23, 75, 218)">
+                                  <i class="fas fa-university"></i>
+                              Currently a  BSc  Student  in Electronics  & Telecommunication Engineering at RUET</span>
+                              </p>
+                          </div>
+          
+                          <div class="philosophy">
+                              <p>
+                                  "I bridge the gap between 
+                                  <span class="accent-blue">technical innovation</span> 
+                                  and 
+                                  <span class="accent-navy">social impact</span>, 
+                                  creating solutions that matter."
+                              </p>
+                          </div>
+          
+                          <div class="cta-buttons">
+                              <a href="CV1.html" class="cta-btn">
+                                  <i class="fas fa-laptop-code"></i>
+                                  My CV 
+                              </a>
+                              <a href="contact.html" class="cta-btn outline">
+                                  <i class="fas fa-paper-plane"></i>
+                                Messenge Me
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- /* About Section Styling */ -->
+          <style>
+          .about-section {
+              padding: 0px 0;
+              background: linear-gradient(135deg, rgba(82, 194, 249, 0.1) 0%, #ffffff 100%);
+              transition: background 0.3s ease-in-out;
+          }
+          
+          .profile-photo {
+              flex: 0 0 40%;
+              max-width: 400px;
+              border-radius: 0px;
+              overflow: hidden;
+              box-shadow: 0 15px 30px rgba(82, 194, 249, 0.2);
+              transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          }
+          
+          .profile-photo:hover {
+              transform: scale(1.05);
+              box-shadow: 0 5px 10px rgba(82, 194, 249, 0.3);
+          }
+          
+          .profile-photo img {
+              width: 100%;
+              height: auto;
+          }
+          
+          .about-content {
+              flex: 1;
+              padding-left: 20px;
+          }
+          
+          .greeting {
+              color: #52c2f9;
+              font-size: 1.8rem;
+              margin-bottom: 2px;
+          }
+          
+          .name {
+              color: #031a2f;
+              font-size: 3.5rem;
+              margin-bottom: 3px;
+          }
+          
+          .passion-item {
+              display: flex;
+              align-items: center;
+              gap: 3px;
+              margin-bottom: 10px;
+              padding: 10px;
+              background: rgba(82, 194, 249, 0.1);
+              border-radius: 10px;
+              transition: background 0.3s ease, transform 0.2s ease;
+          }
+          
+          .passion-item:hover {
+              background: rgba(82, 194, 249, 0.2);
+              transform: scale(1.02);
+          }
+          
+          .passion-item i {
+              color: #52c2f9;
+              font-size: 1.5rem;
+          }
+          
+          .current-status {
+              font-size: 1.2rem;
+              color: #2c3e50;
+              margin: 10px 0;
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              transition: color 0.3s ease-in-out;
+          }
+          
+          .current-status:hover {
+              color: #52c2f9;
+          }
+          
+          .highlight {
+              color: #52c2f9;
+              font-weight: 600;
+          }
+          
+          .philosophy p {
+              font-size: 1.4rem;
+              line-height: 1.6;
+              color: #4a5568;
+              border-left: 4px solid #52c2f9;
+              padding-left: 20px;
+              margin: 5px 0;
+              transition: border-left 0.3s ease-in-out;
+          }
+          
+          .philosophy p:hover {
+              border-left: 6px solid #031a2f;
+          }
+          
+          .accent-blue { color: #52c2f9; }
+          .accent-navy { color: #031a2f; }
+          
+          .cta-buttons {
+              display: flex;
+              gap: 10px;
+              margin-top: 10px;
+          }
+          
+          .cta-btn {
+              padding: 5px 10px;
+              border-radius: 30px;
+              background: #52c2f9;
+              color: white;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              transition: all 0.3s ease, transform 0.2s ease-in-out;
+          }
+          
+          .cta-btn.outline {
+              background: transparent;
+              border: 2px solid #52c2f9;
+              color: #031a2f;
+              transition: all 0.3s ease-in-out;
+          }
+          
+          .cta-btn:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 5px 15px rgba(82, 194, 249, 0.3);
+          }
+          
+          .cta-btn.outline:hover {
+              background: #52c2f9;
+              color: white;
+              border-color: #031a2f;
+          }
+
+
+
+   </style>
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <h1 class="section-title">About Me</h1>
+        <div class="about-row">
+          <div class="about-photo">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <img src="image/tall.png" alt="Atikul's Photo" "/>
+          </div>
+          <div class="about-content">
+            <div class="description">
+              <p>
+                I’m an engineering student at RUET, driven by a passion for
+                technology and innovation.<br />
+                <br />
+                <span style="color: rgb(19, 134, 179)"
+                  >I love learning and solving real-world problems,</span
+                >
+                and
+                <span style="color: rgb(28, 32, 161)"
+                  >I aim to make a positive and ethical impact on society and
+                  the environment.</span
+                >
+              </p>
+            </div>
+
+            <div class="experience-tabs">
+              <div class="tab-header">
+                <div class="tab-link active" onclick="openTab('training')">
+                  Training
+                </div>
+                <div class="tab-link" onclick="openTab('education')">
+                  Education
+                </div>
+                <div class="tab-link" onclick="openTab('skills')">Skills</div>
+              </div>
+
+              <div class="tab-content active" id="training">
+                <ul class="experience-list">
+                  <li>
+                    <span>Computer Fundamental</span>
+                    <p>HAVARD CS50</p>
+                    <small>2023-2024</small>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-content" id="education">
+                <ul class="experience-list">
+                  <li<ul class="experience-list">
+                  <li>
+                    <span>Bsc in Engineering </span>
+                    <p>RUET</p>
+                    <small>2022-2025</small>
+                  </li>
+                
+              </div>
+
+              <div class="tab-content" id="skills">
+                <!-- Add skills content here -->
+            </ul>>
+            <span>Engineering Problem Solver</span>
+            
+        </ul> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openTab(tabName) {
+        // Hide all tab contents
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Remove active class from all tab links
+        document.querySelectorAll(".tab-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Show selected tab content
+        document.getElementById(tabName).classList.add("active");
+
+        // Add active class to clicked tab link
+        event.currentTarget.classList.add("active");
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <--projects section--> -->
+        
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Segoe UI', sans-serif;
+                }
+        
+                .projects {
+                    padding: 4rem 20px;
+                    background: #81baf3;
+                }
+        
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+        
+                h1 {
+                    font-size: 2.5rem;
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                }
+        
+                .projects p {
+                    color: #7f8c8d;
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+        
+                .project-card {
+                    background: white;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    margin-bottom: 3rem;
+                    overflow: hidden;
+                    transition: transform 0.3s ease;
+                    display: flex;
+                    flex-direction: column;
+                }
+        
+                .project-card:hover {
+                    transform: translateY(-5px);
+                }
+        
+                .project-card img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+        
+                .project-info {
+                    padding: 2rem;
+                }
+        
+                h2 {
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                }
+        
+                .project-info p {
+                    color: #7f8c8d;
+                    text-align: left;
+                    margin-bottom: 1.5rem;
+                }
+        
+                .btn {
+                    display: inline-block;
+                    padding: 0.8rem 1.5rem;
+                    background: #3498db;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                }
+        
+                .btn:hover {
+                    background: #2980b9;
+                }
+        
+                .project-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                }
+        
+                .project-item {
+                    background: white;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease;
+                }
+        
+                .project-item:hover {
+                    transform: translateY(-5px);
+                }
+        
+                .project-item img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+        
+                .project-item div {
+                    padding: 1.5rem;
+                }
+        
+                h3 {
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    font-size: 1.4rem;
+                }
+        
+                @media (max-width: 768px) {
+                    .project-card {
+                        margin-bottom: 2rem;
+                    }
+                    
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+            </style>
+       
+            <section class="projects">
+                <div class="container">
+                    <h1>Engineering Projects</h1>
+                    <p>Showcasing innovative engineering and web development projects</p>
+        
+                    <!-- Featured Project -->
+                    <div class="project-card">
+                        <img src="image/d.jpeg" alt="Dual-Axis Solar Tracker">
+                        <div class="project-info">
+                            <h2>Dual-Axis Solar Tracker</h2>
+                            <p>Designed an IoT-enabled solar tracking system using ESP32 and servo motors, optimizing solar efficiency.</p>
+                           
+                        </div>
+                    </div>
+        
+                    <!-- Projects Grid -->
+                    <div class="project-grid">
+                        <div class="project-item">
+                           OnGoing 🔃
+                            <div>
+                                <h3>ML in Electronics</h3>
+                                <p>Developed a predictive maintenance model for electronic circuits using Python and TensorFlow.</p>
+                            </div>
+                        </div>
+        
+                        <div class="project-item"></div>
+                            <div>
+                                <h3>Cybersecurity in IoT</h3>
+                                <p>Conducted security analysis and implemented countermeasures for IoT-based smart devices.</p>
+                            </div>
+                        </div>
+        
+                        <div class="project-item">
+                           
+                            <div>
+                                <h3>SQL Database Optimization</h3>
+                                <p>Optimized complex queries for a high-performance database system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       
+
+
+
+
+
+
+
+
+
+
+        <!-- Edu -->
+
+        
+            <style>
+              /* Education Page Styles */
+              .education-section {
+                padding: 80px 20px;
+                background: rgba(82, 194, 249, 0.05);
+              }
+        
+              .timeline-container {
+                max-width: 800px;
+                margin: 50px auto;
+                position: relative;
+              }
+        
+              .timeline-line {
+                position: absolute;
+                left: 50%;
+                width: 4px;
+                background: #52c2f9;
+                height: 100%;
+                transform: translateX(-50%);
+              }
+        
+              .timeline-item {
+                padding: 30px;
+                width: 45%;
+                background: white;
+                border-radius: 15px;
+                margin: 20px 0;
+                box-shadow: 0 5px 15px rgba(82, 194, 249, 0.1);
+                position: relative;
+              }
+        
+              .timeline-item.left {
+                margin-right: 55%;
+              }
+        
+              .timeline-item.right {
+                margin-left: 55%;
+              }
+        
+              .timeline-icon {
+                width: 40px;
+                height: 40px;
+                background: #52c2f9;
+                border-radius: 50%;
+                position: absolute;
+                top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+              }
+        
+              .timeline-item.left .timeline-icon {
+                right: -60px;
+              }
+        
+              .timeline-item.right .timeline-icon {
+                left: -60px;
+              }
+        
+              .education-header {
+                text-align: center;
+                margin-bottom: 50px;
+              }
+        
+              .education-header h1 {
+                color: #031a2f;
+                font-size: 2.5em;
+                margin-bottom: 15px;
+              }
+        
+              .degree {
+                color: #52c2f9;
+                font-size: 1.3em;
+                margin-bottom: 10px;
+              }
+        
+              .institution {
+                color: #2c3e50;
+                font-weight: 600;
+                margin-bottom: 15px;
+              }
+        
+              .duration {
+                color: #7f8c8d;
+                font-size: 0.9em;
+              }
+        
+              .courses-list {
+                margin-top: 20px;
+                padding-left: 20px;
+              }
+        
+              .courses-list li {
+                margin: 8px 0;
+                color: #4a5568;
+              }
+        
+              @media (max-width: 768px) {
+                .timeline-item {
+                  width: 90%;
+                  margin: 20px auto !important;
+                }
+        
+                .timeline-line {
+                  left: 20px;
+                }
+        
+                .timeline-icon {
+                  left: -25px !important;
+                  right: auto !important;
+                }
+              }
+            </style>
+         
+            <!-- Navigation (Same as index.html) -->
+        
+            <section class="education-section">
+              <div class="education-header">
+                <h1>Academic Journey</h1>
+                <p>From formal education to continuous learning</p>
+              </div>
+        
+              <div class="timeline-container">
+                <div class="timeline-line"></div>
+        
+                <!-- RUET -->
+                <div class="timeline-item left">
+                  <div class="timeline-icon">🎓</div>
+                  <div class="institution">
+                    Rajshahi University of Engineering & Technology (RUET)
+                  </div>
+                  <div class="degree">BSc in Computer Science & Engineering</div>
+                  <div class="duration">2022 - Present</div>
+                  <ul class="courses-list">
+                    <li>AC,DC CirCuit</li>
+                    <li>C++ , OBject Orriented Programming</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Database Systems</li>
+                    <li>Communication Engineering</li>
+                  </ul>
+                </div>
+        
+                <!-- College -->
+                <div class="timeline-item right">
+                  <div class="timeline-icon">🏫</div>
+                  <div class="institution">Aditmari Govt. College</div>
+                  <div class="degree">Higher Secondary Certificate</div>
+                  <div class="duration">2019 - 2021</div>
+                  <ul class="courses-list">
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Mathematics</li>
+                    <li>ICT</li>
+                  </ul>
+                  <strong> GPA:5.00 </strong>
+                </div>
+        
+                <!-- School -->
+                <div class="timeline-item left">
+                  <div class="timeline-icon">📚</div>
+                  <div class="institution">ADITMARI Model School</div>
+                  <div class="degree">Secondary School Certificate</div>
+                  <div class="duration">2017 - 2019</div>
+                  <ul class="courses-list">
+                    <li>Science</li>
+                    <li>Mathematics</li>
+                    <li>English</li>
+                    <li>ICT Fundamentals</li>
+                  </ul>
+                  <strong> GPA:5.00 </strong>
+                </div>
+              </div>
+            </section>
+        
+        
+
+
+
+
+
+
+<!-- Extra-->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: #f0f2f5;
+        color: #333;
+      }
+
+      .header {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .activity-card {
+        background: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .activity-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .activity-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+      }
+
+      h2 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+
+      .date {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .achievements {
+        list-style: none;
+        padding-left: 1rem;
+      }
+
+      .achievements li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .achievements li::before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #3498db;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .skill-tag {
+        background: #3498db;
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          padding: 2rem 1rem;
+        }
+
+        .activity-card {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+
+    <heade class="header">
+      <h1>Extracurricular Activities</h1>
+      <p>Beyond academics - Leadership, Innovation & Service</p>
+
+    <div class="container">
+      <!-- Science Olympiad -->
+      <div class="activity-card">
+        <div class="activity-header">
+          <div>
+            <h2>Science Olympiad Champion</h2>
+            <div class="date">2018(Upazila),2019(Zila )</div>
+            <img src="image/o.jpg" class="icon" alt="science-olympiad" />
+          </div>
+        </div>
+        <ul class="achievements">
+          <li>Championin Bangladesh Science Olympiad 2022</li>
+          <li>
+            Developed innovative solutions for real-world Science challenges
+          </li>
+
+          <li>Mentored juniors in olympiad preparation</li>
+        </ul>
+        <div class="skills">
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Advanced Mathematics</span>
+          <span class="skill-tag">Experimental Science </span>
+        </div>
+      </div>
+
+      <!-- Udvash Online Doubt Solver -->
+      <div class="activity-card">
+        <div class="activity-header">
+          <img
+            src="https://img.icons8.com/color/96/online-support.png"
+            class="icon"
+            alt="support"
+          />
+          <div>
+            <h2>Online Doubt Solver - Udvash</h2>
+            <div class="date">2022-Present</div>
+          </div>
+        </div>
+        <ul class="achievements">
+          <li>
+            Resolved 2500+ complex HSC Admissions queries from students
+            nationwide
+          </li>
+          <li>Maintained 98% satisfaction rate in student feedback</li>
+          <li>
+            Developed time-efficient problem solving techniques with
+            self-Dependency
+          </li>
+        </ul>
+        <div class="skills">
+          <span class="skill-tag">STEM Education</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Pedagogy</span>
+        </div>
+      </div>
+
+      <!-- RUET Cyber Security Club -->
+      <div class="activity-card">
+        <div class="activity-header">
+          <img
+            src="https://img.icons8.com/color/96/cyber-security.png"
+            class="icon"
+            alt="cyber-security"
+          />
+          <div>
+            <h2>Cyber Security Club Executive - RUET</h2>
+            <div class="date">2023-Present</div>
+          </div>
+        </div>
+        <ul class="achievements">
+          <li>Organized national-level cyber security workshops</li>
+          <li>Led team in developing campus network security protocols</li>
+          <li>Conducted ethical hacking demonstrations</li>
+          <li>Managed club's technical infrastructure</li>
+        </ul>
+        <div class="skills">
+          <span class="skill-tag">Network Security</span>
+          <span class="skill-tag">Linux Administration</span>
+          <span class="skill-tag">Team Leadership</span>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+
+<!-- Experience -->
+<
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      .skills-section {
+        padding: 50px 20px;
+        background: rgba(82, 194, 249, 0.05);
+      }
+
+      .category-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .category-title {
+        color: #031a2f;
+        font-size: 1.3em;
+        margin: 20px 0 10px;
+        border-bottom: 3px solid #52c2f9;
+        padding-bottom: 10px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      .skill-card {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(82, 194, 249, 0.1);
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(82, 194, 249, 0.2);
+      }
+
+      .skill-icon {
+        font-size: 2rem;
+        color: #52c2f9;
+        margin-bottom: 15px;
+      }
+
+      .skill-name {
+        color: #031a2f;
+        font-size: 1.1 em;
+        font-weight: 600;
+      }
+    </style>
+  
+    <!-- Navigation (Same as other pages) -->
+<h2 style="text-align: center  ;font-size:2rem ; font-weight: 700; color: blueviolet;">My Skills & Experience </h2>
+    <section class="skills-section">
+      <!-- < class="category-container"> -->
+        <h2 class="category-title">Programming Languages</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="skill-icon fab fa-python"></i>
+            <div class="skill-name">Python</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-database"></i>
+            <div class="skill-name">MySQL</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-file-code"></i>
+            <div class="skill-name">C++</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-c"></i>
+            <div class="skill-name">C</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fab fa-html5"></i>
+            <div class="skill-name">HTML</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fab fa-css3-alt"></i>
+            <div class="skill-name">CSS</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fab fa-js-square"></i>
+            <div class="skill-name">JavaScript</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fab fa-php"></i>
+            <div class="skill-name">PHP</div>
+          </div>
+        </div>
+
+        <h2 class="category-title">Office Suite</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="skill-icon fas fa-file-powerpoint"></i>
+            <div class="skill-name">PowerPoint</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-file-excel"></i>
+            <div class="skill-name">Excel</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-file-word"></i>
+            <div class="skill-name">Word</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fab fa-google"></i>
+            <div class="skill-name">Google Apps</div>
+          </div>
+        </div>
+
+        <h2 class="category-title">Software & Tools</h2>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-cube"></i>
+            <div class="skill-name">MATLAB/Simulink</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-microchip"></i>
+            <div class="skill-name">Proteus</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-drafting-compass"></i>
+            <div class="skill-name">Visio</div>
+          </div>
+          <div class="skill-card">
+            <i class="skill-icon fas fa-file-alt"></i>
+            <div class="skill-name">LaTeX</div>
+          </div>
+    
+          <div class="skill-card">
+            <i class="skill-icon fas fa-list-alt"></i>
+            <div class="skill-name">Google Forms</div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+<!-- mail -->
+
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+    
+      }
+
+      .contact-form {
+        background-color: #8ac9d7;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 3px solid #980a0a;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h1>Contact Me-:</h1>
+      <form action="contact.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Mail</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+
+  <!-- contact.html -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact </title>
+  <style>
+    /* Contact Page Styles */
+    .contact {
+      padding: 50px 20px;
+      background: #287ba8;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .contact h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .social-icons a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-icons a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(22, 101, 170, 0.3);
+    }
+    .social-icons img {
+      width: 60%;
+      height: auto;
+    }
+    /* Footer Styles */
+    .copyright-footer {
+      margin-top: 50px;
+      padding: 20px 0;
+      border-top: 1px solid rgba(51, 127, 185, 0.1);
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .copyright-footer p {
+      margin: 5px 0;
+    }
+  </style>
+ </head>
+ <body>
+  
+
+<section class="contact">
+  
+
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p>Connect with me on social media or reach out directly!</p>
+
+    <!-- Social Media Links -->
+    <div class="social-icons">
+      <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+          alt="Facebook"
+        />
+      </a>
+      <a href="YOUR_TWITTER_X_LINK" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+          alt="X (Twitter)"
+        />
+      </a>
+      <a href="YOUR_WHATSAPP_LINK" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+          alt="WhatsApp"
+        />
+      </a>
+
+      <a href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111644.png"
+          alt="Telegram"
+        />
+      </a>
+      <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+          alt="LinkedIn"
+        />
+      </a>
+    </div>
+
+    <!-- Copyright Footer -->
+    <div class="copyright-footer">
+      <p>Made with Atikul 🚀</p>
+      <p>Copyright © all rights reserved by site admin- 2025</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+ 
+  </body>
+</html>
