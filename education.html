@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Atikul's Education</title>
+    <style>
+      /* Education Page Styles */
+      .education-section {
+        padding: 80px 20px;
+        background: rgba(82, 194, 249, 0.05);
+      }
+
+      .timeline-container {
+        max-width: 800px;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .timeline-line {
+        position: absolute;
+        left: 50%;
+        width: 4px;
+        background: #52c2f9;
+        height: 100%;
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        padding: 30px;
+        width: 45%;
+        background: white;
+        border-radius: 15px;
+        margin: 20px 0;
+        box-shadow: 0 5px 15px rgba(82, 194, 249, 0.1);
+        position: relative;
+      }
+
+      .timeline-item.left {
+        margin-right: 55%;
+      }
+
+      .timeline-item.right {
+        margin-left: 55%;
+      }
+
+      .timeline-icon {
+        width: 40px;
+        height: 40px;
+        background: #52c2f9;
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .timeline-item.left .timeline-icon {
+        right: -60px;
+      }
+
+      .timeline-item.right .timeline-icon {
+        left: -60px;
+      }
+
+      .education-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .education-header h1 {
+        color: #031a2f;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+      }
+
+      .degree {
+        color: #52c2f9;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+
+      .institution {
+        color: #2c3e50;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .duration {
+        color: #7f8c8d;
+        font-size: 0.9em;
+      }
+
+      .courses-list {
+        margin-top: 20px;
+        padding-left: 20px;
+      }
+
+      .courses-list li {
+        margin: 8px 0;
+        color: #4a5568;
+      }
+
+      @media (max-width: 768px) {
+        .timeline-item {
+          width: 90%;
+          margin: 20px auto !important;
+        }
+
+        .timeline-line {
+          left: 20px;
+        }
+
+        .timeline-icon {
+          left: -25px !important;
+          right: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation (Same as index.html) -->
+
+    <section class="education-section">
+      <div class="education-header">
+        <h1>Academic Journey</h1>
+        <p>From formal education to continuous learning</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- RUET -->
+        <div class="timeline-item left">
+          <div class="timeline-icon">🎓</div>
+          <div class="institution">
+            Rajshahi University of Engineering & Technology (RUET)
+          </div>
+          <div class="degree">BSc in Computer Science & Engineering</div>
+          <div class="duration">2022 - Present</div>
+          <ul class="courses-list">
+            <li>AC,DC CirCuit</li>
+            <li>C++ , OBject Orriented Programming</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Artificial Intelligence</li>
+            <li>Database Systems</li>
+            <li>Communication Engineering</li>
+          </ul>
+        </div>
+
+        <!-- College -->
+        <div class="timeline-item right">
+          <div class="timeline-icon">🏫</div>
+          <div class="institution">Aditmari Govt. College</div>
+          <div class="degree">Higher Secondary Certificate</div>
+          <div class="duration">2019 - 2021</div>
+          <ul class="courses-list">
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>Mathematics</li>
+            <li>ICT</li>
+          </ul>
+          <strong> GPA:5.00 </strong>
+        </div>
+
+        <!-- School -->
+        <div class="timeline-item left">
+          <div class="timeline-icon">📚</div>
+          <div class="institution">ADITMARI Model School</div>
+          <div class="degree">Secondary School Certificate</div>
+          <div class="duration">2017 - 2019</div>
+          <ul class="courses-list">
+            <li>Science</li>
+            <li>Mathematics</li>
+            <li>English</li>
+            <li>ICT Fundamentals</li>
+          </ul>
+          <strong> GPA:5.00 </strong>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

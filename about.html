@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About-|Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- about -->
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <h1 class="section-title">About Me</h1>
+        <div class="about-row">
+          <div class="about-photo">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <img src="image/tall.png" alt="Atikul's Photo" "/>
+          </div>
+          <div class="about-content">
+            <div class="description">
+              <p>
+                I’m an engineering student at RUET, driven by a passion for
+                technology and innovation.<br />
+                <br />
+                <span style="color: rgb(19, 134, 179)"
+                  >I love learning and solving real-world problems,</span
+                >
+                and
+                <span style="color: rgb(28, 32, 161)"
+                  >I aim to make a positive and ethical impact on society and
+                  the environment.</span
+                >
+              </p>
+            </div>
+
+            <div class="experience-tabs">
+              <div class="tab-header">
+                <div class="tab-link active" onclick="openTab('training')">
+                  Training
+                </div>
+                <div class="tab-link" onclick="openTab('education')">
+                  Education
+                </div>
+                <div class="tab-link" onclick="openTab('skills')">Skills</div>
+              </div>
+
+              <div class="tab-content active" id="training">
+                <ul class="experience-list">
+                  <li>
+                    <span>UI/UX Design Training</span>
+                    <p>ET Institute</p>
+                    <small>2023-2024</small>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-content" id="education">
+                <!-- Add education content here -->
+              </div>
+
+              <div class="tab-content" id="skills">
+                <!-- Add skills content here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openTab(tabName) {
+        // Hide all tab contents
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Remove active class from all tab links
+        document.querySelectorAll(".tab-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Show selected tab content
+        document.getElementById(tabName).classList.add("active");
+
+        // Add active class to clicked tab link
+        event.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

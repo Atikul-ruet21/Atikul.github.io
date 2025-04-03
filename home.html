@@ -1,0 +1,241 @@
+<title>Atikul| Dev</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <title>Atikul's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="eet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- In HTML head -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="eet"
+    />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Navigation Bar -->
+        <div class="container">
+          <nav>
+            <img src="image/logo.png" alt="logo Picture" />
+            <img
+              src="image/pasport.jpg"
+              style="height: 150px"
+              alt="profile Picture"
+            />
+  
+            <ul>
+              <li><a href="home.html" data-page="home.html">Home</a></li>
+              <li><a href="about.html" data-page="about.html">About</a></li>
+              <li><a href="projects.html" data-page="projects.html">Projects</a></li>
+              <li><a href="galleries.html" data-page="galleries.html">Galleries</a></li>
+              <li><a href="education.html" data-page="education.html">Education</a></li>
+              <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+              <li>
+                <a href="extra.html" data-page="extracurricular.html">Extracurricular</a>
+              </li>
+              <li><a href="experience.html" data-page="experience.html">Experience</a></li>
+              <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="about-section">
+              <div class="container">
+                  <div class="about-row">
+                     
+                      <div class="about-content">
+                          <Span class="greeting">Hey there!&nbsp &nbsp&nbsp&nbsp&nbsp I'm</Span>
+                          <h3  class="name" style="color:rgb(28, 32, 161)">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspATIKUL</h3>
+                          
+                          <div class="passion-statement">
+                              <div class="passion-item">
+                                  <i class="fas fa-brain"></i>
+                                  <span>Passionate about AI & Machine Learning</span>
+                              </div>
+                              <div class="passion-item">
+                                  <i class="fas fa-code"></i>
+                                  <span>Learning Front-End Web Development</span>
+                              </div>
+                          </div>
+          
+                          <div class="education-info">
+                              <p class="current-status" style="color:rgb(23, 75, 218) ; font-size: 13px;">
+                                  <i class="fas fa-university"></i>
+                              Currently a  BSc  Student  in Electronics  & Telecommunication Engineering at RUET</span>
+                              </p>
+                          </div>
+          
+                          <div class="philosophy">
+                              <p style="color:rgb(23, 75, 218) ; font-size: 10px;">
+                                  "-  I bridge the gap between 
+                                  <span class="accent-blue">technical innovation</span> 
+                                  and 
+                                  <span class="accent-navy">social impact</span>, 
+                                  creating solutions that matter."
+                              </p>
+                          </div>
+          
+                          <div class="cta-buttons">
+                              <a href="cv.html" class="cta-btn">
+                                  <i class="fas fa-laptop-code"></i>
+                                  My CV 
+                              </a>
+                              <a href="contact.html" class="cta-btn outline">
+                                  <i class="fas fa-paper-plane"></i>
+                                  Get in Touch
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- /* About Section Styling */ -->
+          <style>
+          .about-section {
+              padding: 0px 0;
+              background: linear-gradient(135deg, rgba(82, 194, 249, 0.1) 0%, #ffffff 100%);
+              transition: background 0.3s ease-in-out;
+          }
+          
+          .profile-photo {
+              flex: 0 0 40%;
+              max-width: 400px;
+              border-radius: 0px;
+              overflow: hidden;
+              box-shadow: 0 15px 30px rgba(82, 194, 249, 0.2);
+              transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          }
+          
+          .profile-photo:hover {
+              transform: scale(1.05);
+              box-shadow: 0 5px 10px rgba(82, 194, 249, 0.3);
+          }
+          
+          .profile-photo img {
+              width: 100%;
+              height: auto;
+          }
+          
+          .about-content {
+              flex: 1;
+              padding-left: 20px;
+          }
+          
+          .greeting {
+              color: #52c2f9;
+              font-size: 1.8rem;
+              margin-bottom: 2px;
+          }
+          
+          .name {
+              color: #031a2f;
+              font-size: 3.5rem;
+              margin-bottom: 3px;
+          }
+          
+          .passion-item {
+              display: flex;
+              align-items: center;
+              gap: 3px;
+              margin-bottom: 10px;
+              padding: 10px;
+              background: rgba(82, 194, 249, 0.1);
+              border-radius: 10px;
+              transition: background 0.3s ease, transform 0.2s ease;
+          }
+          
+          .passion-item:hover {
+              background: rgba(82, 194, 249, 0.2);
+              transform: scale(1.02);
+          }
+          
+          .passion-item i {
+              color: #52c2f9;
+              font-size: 1.5rem;
+          }
+          
+          .current-status {
+              font-size: 1.2rem;
+              color: #2c3e50;
+              margin: 10px 0;
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              transition: color 0.3s ease-in-out;
+          }
+          
+          .current-status:hover {
+              color: #52c2f9;
+          }
+          
+          .highlight {
+              color: #52c2f9;
+              font-weight: 600;
+          }
+          
+          .philosophy p {
+              font-size: 1.4rem;
+              line-height: 1.6;
+              color: #4a5568;
+              border-left: 4px solid #52c2f9;
+              padding-left: 20px;
+              margin: 5px 0;
+              transition: border-left 0.3s ease-in-out;
+          }
+          
+          .philosophy p:hover {
+              border-left: 6px solid #031a2f;
+          }
+          
+          .accent-blue { color: #52c2f9; }
+          .accent-navy { color: #031a2f; }
+          
+          .cta-buttons {
+              display: flex;
+              gap: 10px;
+              margin-top: 10px;
+          }
+          
+          .cta-btn {
+              padding: 5px 10px;
+              border-radius: 30px;
+              background: #52c2f9;
+              color: white;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              transition: all 0.3s ease, transform 0.2s ease-in-out;
+          }
+          
+          .cta-btn.outline {
+              background: transparent;
+              border: 2px solid #52c2f9;
+              color: #031a2f;
+              transition: all 0.3s ease-in-out;
+          }
+          
+          .cta-btn:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 5px 15px rgba(82, 194, 249, 0.3);
+          }
+          
+          .cta-btn.outline:hover {
+              background: #52c2f9;
+              color: white;
+              border-color: #031a2f;
+          }
+
+
+
+   </style>
